@@ -1,0 +1,157 @@
+
+/*List Styling */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  
+}
+
+ul li {
+  float: left;
+  border-right: white;
+  
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FFD700;
+}
+
+li a:hover {
+  background-color: #800020;
+}
+
+a#navicon{
+	display: none;
+}
+
+/*Background Color */
+html {
+	background-color: #4169e1;
+}
+
+
+/*Small Page */
+@media only screen and (max-width: 600px){
+	#listOfProducts, #listOfBags, #GlovesPage, #HeadgearTypes, #OtherMartialArtsTraining, #ShoesInformation{
+		/*Styles the pages with columns
+		and lines up the divs */
+		column-count: 1;
+	}
+	
+	/*Styles the pages without columns */
+	#ClothesList, #CoachingAdvice, #NutritionInformation, #PadsInformation, #StartingGym{
+		width: 90%;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		font-size: 1.5em;
+	}
+	
+	/*Inside the Columns Styles */
+	#Gloves, #Shoes, #Pads, #Headgear, #Clothes, 
+	#Bags, #Nutrition, #Coaching, #StartingAGym, #OtherMartialArts,
+	#HeavyBags, #SpeedBags, #UppercutBag, #BananaHeavyBag, #BodyOpponentBag,
+	#WaterBag, #DoubleEndBag, #VenumGloves, #EverlastGloves, #CletoReyesGloves,
+	#OpenFaced, #MexicanStyle, #FullFace, #Wrestling, #Kickboxing,
+	#BrazilianJiuJitsu, #MuyThai, #LowTop, #MidTop, #HighTop
+	{
+		color: black;
+		text-align: center;
+		background-color: white;
+		border-bottom: 3px solid black;
+		font-size: 1.5em;
+	}
+	
+	/*Functionality Not WOrking */
+	a#navicon{
+		display: block;
+	}
+	
+	nav.horizontalNavigation ul{
+		display: none;
+	}
+	
+	a#navicon:hover + ul, nav.horizontalNavigation ul:hover{
+		display: block;
+	}
+	
+}
+
+
+/*BIG Page */
+@media only screen and (min-width: 601px){
+	/*Seperates these pages into two columns */
+	#listOfProducts, #listOfBags, #GlovesPage, #HeadgearTypes, #OtherMartialArtsTraining, #ShoesInformation{
+		column-count: 2;
+		/*Styles the pages with columns
+		and lines up the divs */
+		div {display: inline-block;}
+	}
+	
+	/*Styles the pages without columns */
+	#ClothesList, #CoachingAdvice, #NutritionInformation, #PadsInformation, #StartingGym{
+		width: 70%;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: white;
+		font-size: 1.5em;
+	}
+	
+	/*Inside the Columns Styles */
+	#Gloves, #Shoes, #Pads, #Headgear, #Clothes, 
+	#Bags, #Nutrition, #Coaching, #StartingAGym, #OtherMartialArts,
+	#HeavyBags, #SpeedBags, #UppercutBag, #BananaHeavyBag, #BodyOpponentBag,
+	#WaterBag, #DoubleEndBag, #VenumGloves, #EverlastGloves, #CletoReyesGloves,
+	#OpenFaced, #MexicanStyle, #FullFace, #Wrestling, #Kickboxing,
+	#BrazilianJiuJitsu, #MuyThai, #LowTop, #MidTop, #HighTop
+	{
+		color: black;
+		text-align: center;
+		background-color: white;
+		border-bottom: 3px solid black;
+	}
+}
+
+/*Centers Images */
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/*Centers Beginning INformation */
+.beginningInformation{
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	color: #E5CACE;
+}
+
+
+/*Footer Styles */
+footer {
+	
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin-top: 100px;
+	color: gold;
+	text-align: center;
+	background-color: black;
+	padding: 5px;
+}
